@@ -18,5 +18,4 @@ https://forum.alofthobbies.com/index.php?threads/uni-receiver-firmware-release-f
 | RX6R     | RX4R_75sm.frk           |
 | G-RX6    | UNI_RXxR_GRXx_78sm.frk  |
 | G-RX8    | UNI_RXxR_GRXx_78sm.frk  |
-|          |                         |
-| -------- | ----------------------- |
+
