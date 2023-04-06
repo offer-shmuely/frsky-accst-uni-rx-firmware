@@ -1,8 +1,7 @@
+#!/usr/bin/python3
 import re
 import shutil
-from pathlib import Path
 import os
-import glob
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -16,7 +15,6 @@ mapping_list = {
 raw_dir = os.path.normpath(f'{SCRIPT_DIR}/../raw/')
 to_dir = os.path.normpath(f'{SCRIPT_DIR}/..')
 frk_list = os.listdir(raw_dir)
-# gg = glob.glob(raw_dir)
 
 for from_name in frk_list:
     to_name = from_name.lower()
