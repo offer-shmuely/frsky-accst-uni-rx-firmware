@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+import datetime
 import re
 import shutil
 import os
+from zipfile import ZipFile
 
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -19,6 +21,7 @@ to_dir = os.path.normpath(f'{SCRIPT_DIR}/..')
 
 
 def main():
+    update_frk_list = []
     frk_list = os.listdir(raw_dir)
 
     for from_name in frk_list:
@@ -48,8 +51,19 @@ def main():
             print(to_name)
             shutil.copy2(f'{raw_dir}/{from_name}', f'{to_dir}/{to_name}')
 
+        update_frk_list.append(to_name)
         print(to_name)
         pass
+
+    date = datetime.date.today()
+    year_month = date.strftime('%Y-%m-%d')
+
+    print('zipping...')
+    with ZipFile(f'{SCRIPT_DIR}/../uni-firmware-{year_month}.zip', 'w') as myzip:
+        for to_name in update_frk_list:
+            myzip.write(f'{SCRIPT_DIR}/../{to_name}', to_name)
+
+    pass
 
 
 main()
