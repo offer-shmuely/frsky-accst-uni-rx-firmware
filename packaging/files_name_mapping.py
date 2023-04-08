@@ -46,13 +46,13 @@ def main():
                 to_name = f'uni_{mapped_rx}_v{ver}{postfix}.frk'
                 print(to_name)
                 shutil.copy2(f'{raw_dir}/{from_name}', f'{to_dir}/{to_name}')
+                update_frk_list.append(to_name)
         else:
             to_name = f'uni_{rx_name}_v{ver}{postfix}.frk'
             print(to_name)
             shutil.copy2(f'{raw_dir}/{from_name}', f'{to_dir}/{to_name}')
+            update_frk_list.append(to_name)
 
-        update_frk_list.append(to_name)
-        print(to_name)
         pass
 
     date = datetime.date.today()
