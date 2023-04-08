@@ -7,7 +7,7 @@ The UNI project belong to Aloft Hobbies & the Mike Blandford
 Mike (or should I say Sir Blandford ;) ) is the developer of this great piece of software, and we all thank him for the dedication.
 
 
-LUA scripts: https://github.com/offer-shmuely/frsky-accst-uni-rx-scripts/wiki
+LUA scripts: https://github.com/offer-shmuely/frsky-accst-uni-rx-scripts
 
 
 
