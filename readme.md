@@ -15,3 +15,4 @@ LUA scripts: https://github.com/offer-shmuely/frsky-accst-uni-rx-scripts
 The raw files (before renaming) are taken from:
 https://forum.alofthobbies.com/index.php?threads/uni-receiver-firmware-release-files-universal-accst-d16.3270
 
+### Guide can be found here: [UNI Guide.pdf](https://github.com/offer-shmuely/frsky-accst-uni-rx-firmware/blob/main/Universal%20ACCST%20Guide.pdf)
