@@ -36,6 +36,7 @@ def main():
         g3 = g3.replace('rom', '')
         g5 = g5.replace('rom', '')
         postfix = g3 + g5
+        postfix = ''  # ignore the 'rom' & 'sm'
 
         if rx_name in ignored_list:
             continue
